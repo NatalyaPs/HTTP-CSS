@@ -1,0 +1,19 @@
+/* h2 {
+    color: darkcyan;
+} */
+.heading {
+    color: darkcyan;
+}
+
+.heading-about {
+    color: orange;
+}
+
+.title {
+    background-color: grey;
+    color: blueviolet;
+}
+
+h1 {
+    border: 1px solid violet;
+}
