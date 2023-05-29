@@ -1,0 +1,35 @@
+* {          
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    padding-bottom: 162px;
+}
+
+.header {
+    padding-top: 40px;
+    /* padding-bottom: 84px; */
+}
+
+.top__content {
+    margin-top: 84px;
+    /* margin-bottom: 162px; */
+}
+
+.title {
+    margin-bottom: 17px;
+}
+
+.top__buttons {
+    margin-top: 37px;
+}
+
+.clients {
+    padding-top: 97px;
+    padding-bottom: 96px;
+}
