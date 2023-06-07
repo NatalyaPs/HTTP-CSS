@@ -17,3 +17,17 @@
 h1 {
     border: 1px solid violet;
 }
+
+/* .text a {     <!-- старый подход -->
+    font-size: 18px;
+    color: red;
+} */
+
+p {
+    font-size: 18px;
+    color: red;
+}
+
+    p a {
+        color: inherit;
+}

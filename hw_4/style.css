@@ -1,0 +1,147 @@
+* {          
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    /* padding-bottom: 162px; */
+}
+
+.header {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+    /* padding-bottom: 84px; */
+}
+
+.header__links {
+    width: 533px;
+    height: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: flex-end;
+}
+
+.header__link {
+    color: #000000;
+}
+
+.header__link_1 {
+    color: #F25822;
+}
+
+.top__content {
+    margin-top: 84px;
+    margin-bottom: 162px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+}
+
+
+.title {
+    margin-bottom: 17px;
+    width: 522px;
+    /* height: 222px; */
+    font-size: 60px;
+    line-height: 70px;
+    color: #000000;
+}
+
+.text {
+    width: 466px;
+    /* height: 48px; */
+    color: #888888;
+    font-size: 20px;
+    line-height: 23px;
+    color: #888888;
+}
+
+.top__buttons {
+    margin-top: 37px;
+    /* margin-bottom: 103; */
+    width: 302px;
+    height: 50px;
+    display: flex;
+    gap: 24px; 
+    align-items: center;
+}
+
+.button__start {
+    width: 140px;
+    height: 50px;
+    background-color: #F25822;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border: 1px solid #F25822;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button__start:hover {
+    background-color: #f3d2a7;
+    color: #F25822;;
+    border: 3px solid #F25822;;
+
+}
+
+.button__video {
+    width: 140px;
+    height: 50px;
+    /* text-align: center;   */
+    /* padding-bottom: 17px;    хотела сделать текс по центру */
+    /* width: 135px;     сделаю одинаковую по размерам с соседней кнопкой
+    height: 30px; */
+    background-color: #FFFFFF;
+    font-size: 15px;
+    line-height: 50px;
+    color: #AAAAAA;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+}
+
+.button__video:hover {
+    background-color: #f3d2a7;
+    color: #F25822;;
+    border: 3px solid #F25822;;
+
+}
+
+.button__play {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.top__logo {
+    padding-top: 97px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    gap: 48px;
+}

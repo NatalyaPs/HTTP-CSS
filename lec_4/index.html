@@ -1,0 +1,63 @@
+<!-- продолжаем работать в файлах из 3й лекции. Делаем:  .content  и дальше -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Lorem ipsum dolor sit amet consectetur <a href="#">adipisicing elit</a>. Sint ipsam
+    <h2>Lorem ipsum dolor sit amet.</h2> -->
+
+    <div class="header center">
+        <a class="header__link" href="#">Обо мне</a>
+        <a class="header__link" href="#">Навыки</a>
+        <a class="header__link" href="#">Контакты</a>
+    </div>
+
+    <div class="top center">
+        <h1 class="title">Алексей Кадочников</h1>
+        <img src="img/Alexsey.jpg" width="500" alt="top photo">
+    </div>
+
+    <div class="about center">
+        <h2 class="heading">Обо мне</h2>
+        <div class="about__content">
+            <img src="img/Alexsey.jpg" width="500" alt="about photo">
+            <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusantium earum reprehenderit dicta pariatur quo ullam necessitatibus dolore facere quam nulla, dolor quisquam, fugiat architecto, dolores placeat commodi veniam repellat.</p>
+        </div>
+    </div>
+
+    <p>то, что ниже, для примера grid</p>
+    <!-- ______________РАССМАТРИВАЕМ СЕТКУ _____________________ -->
+    <!-- .content  это родитель -->
+    <div class="content">
+        <!-- .item.item$*6  => сетка: делаем эл-ты div с классом item , нумерованные => item$ и 6 шт => *6  -->
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div>
+        <div class="item item7"></div>
+        <div class="item item8"></div>
+        <div class="item item9"></div>
+        <div class="item item10"></div>
+    </div>
+    <!-- __________ ОДИН ЭЛ-Т НАЕЗЖАЕТ НА ДРУГОЙ. позиционирование - position____________ -->
+    <div class="box">
+        <div class="elem elem1"></div>
+        <div class="elem elem2"></div>
+        <div class="elem elem3"></div>
+    </div>
+</body>
+
+</html>
