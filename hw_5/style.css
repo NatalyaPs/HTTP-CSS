@@ -125,7 +125,7 @@ a {
 .button__video:hover {
     background-color: #f3d2a7;
     color: #F25822;;
-    border: 3px solid #F25822;;
+    border: 3px solid #F25822;
 
 }
 
@@ -144,4 +144,151 @@ a {
     justify-content: space-between;
     /* justify-content: space-around; */
     gap: 48px;
+}
+
+/*_______домашняя работа № 5________*/
+
+.preview {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 1915px;
+    height: 491px;
+    background: #FFFFFF;
+}
+
+.preview__content {
+    width: 370px;
+    height: 291px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-bottom: 25px;
+    padding-top: 40px;
+    padding-left: 30px;
+    
+}
+
+.preview__content__shadow {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.headline {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    padding-top: 25px;
+    padding-bottom: 17px;
+}
+
+.preview__desc {
+    font-size: 15px;
+    line-height: 22px;  
+    color: #666666;
+    
+}
+
+.preview__link {
+    font-size: 11px;
+    line-height: 16px;
+    color: #000000;
+    padding-top: 25px;
+}
+
+.aside {
+    background: #FAFAFA;
+    background-size: 100% 100%;
+    padding-top: 92px;
+    padding-bottom: 100px;
+}
+
+.aside_title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 19px;
+    padding-bottom: 54px;
+}
+
+.subtitle {
+    font-size: 45px;
+    line-height: 53px;
+    color: #000000;
+    
+}
+
+.aside__desc {
+    width: 700px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+    
+}
+
+.aside__elem {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.elem {
+    width: 370px;
+    height: 549px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.elem_shadow {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.elem_desc {
+    padding-top: 22px;
+    padding-bottom: 39px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #AAAAAA;
+}
+
+.button_aside {
+    width: 150px;
+    height: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #F25822;
+}
+
+.button_aside:hover {
+    background-color: #f3d2a7;
+    color: #F25822;;
+    border: 1px solid #F25822;;
 }
