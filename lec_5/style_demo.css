@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-----ЭТО СТИЛИ ДЛЯ ДЕСКТОПА-----*/
+
+/* body {
+    width: 1200px;
+} */
+
+.header {
+    /* max-width: 1200px; */
+    /* min-height: 150px; */
+    /* min-height: 100%; */
+    /* min-height: 100vh; */
+    border: 1px solid #000;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    flex-wrap: wrap;
+}
+
+.item {
+    /* max-width: 250px;
+    min-width: 250px;
+    min-height: 250px; */
+    /*width: 450px; во flex-box они работают, как max-width */
+    /*width: 33.333333%; /*работает от родительского блока*/
+    /* height: 250px; */
+    width: 33.333333vw;
+    height: 50vh;
+    border: 1px solid#000;
+    /* overflow: hidden;  скрыть перекрытия, т.е. вываливающися части*/
+    overflow: scroll;
+    box-sizing: border-box; /*не дает учитывать значения паддингов и рамки*/
+}
+
+/*-----ЭТО СТИЛИ ДЛЯ ПЛАНШЕТА-----*/
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .item {
+        /* background-color: orange; */
+        width: 50vw;
+        height: 250px;
+    }
+}
+
+/*-----ЭТО СТИЛИ ДЛЯ МОБИЛЬНОГО-----*/
+@media (max-width: 767px) {    /*767 т.к. 768 уже планшет*/
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .item {
+        width: 100vw;
+        height: 200px;  /*или привязать к экрану*/
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 32px;
+    }
+}
+
+/*только планшет*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        text-decoration: underline;
+    }
+}
