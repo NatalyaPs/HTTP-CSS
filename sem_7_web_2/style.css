@@ -104,6 +104,7 @@
   justify-content: center;
 }
 
+/* стили для планшета */
 @media screen and (max-width: 768px) {
   .item-flex {
     flex-wrap: wrap;
@@ -147,6 +148,8 @@
     width: 48%;
   }
 }
+
+/* стили для мобилки 376-768 */
 @media screen and (min-width: 376px) and (max-width: 768px) {
   .rew-flex {
     flex-direction: column;
@@ -165,6 +168,8 @@
     background-color: red;
   }
 }
+
+/* стили для мобилки до 375 (376) */
 @media screen and (max-width: 375px) {
   .item-1,
 .item-2,
