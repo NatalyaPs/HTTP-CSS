@@ -1,0 +1,33 @@
+* {
+    margin: 2;
+    padding: 0;
+}
+
+.audio-box {
+    background-color: grey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-box {
+    height: 100vh;
+    /* width: 100vw; */
+    position: relative;
+}
+
+.heading {
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    color: rgb(170, 240, 217);
+}
+
+.video {
+    height: 100vh;
+    width: 100vw;
+}
+

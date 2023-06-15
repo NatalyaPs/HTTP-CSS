@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантические элементы</title>
+</head>
+<!-- семантические элементы -->
+<body>
+    <header class="header"></header> 
+    <nav>
+        <a href="#"></a>
+        <a href="#"></a>
+    </nav>
+    <aside></aside> <!-- можно убрать без потери смысла -->
+    <main>
+        <section class="about">
+            <h2>Обо мне</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis</p>
+        </section>
+        <!-- здесь article -->
+        <section class="skills">
+            <h2>Мои навыки</h2>
+            <article>
+                <h3>HTML5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem</p>
+            </article>
+            <article>
+                <h3>CSS3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </article>
+            <article>
+                <h3>JS</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </article>
+        </section>
+        <!-- здесь ФИГУРА -->
+        <section>
+            <h2>Первые шаги в веб-разработке</h2>
+            <!-- фигура -->
+            <figure>
+                <!-- фигкапшн-"описание рисунка" -заголовок привязанной картинки -->
+                <figcaption>Уровень зп</figcaption>
+                <img src="#" alt="зп">
+                <div>
+                    <p>Lorem ipsum dolor, sit </p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <ul>
+                        <li>list-1</li>
+                        <li>list-2</li>
+                        <li>list-3</li>
+                        <li>list-4</li>
+                    </ul>
+                </div>
+            </figure>
+        </section>
+        <!-- здесь details -может открыть или закрыть -->
+        <!-- здесь summary -текст,который необходимо скрыть -->
+        <section>
+            <h2>Истории обо мне</h2>
+            <!-- можно сделать выпадающий список  -->
+
+            <!-- если details  open - то открытый -->
+            <details open>
+                <summary>История работы в первой компании</summary>
+                <h3>Название компании</h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, exercitationem veritatis est dicta ipsum incidunt?
+                <h4>Минусы, оторые встретил</h4>
+                <ul>
+                    <li>list-1</li>
+                    <li>list-2</li>   
+                </ul>
+            </details>
+            <details>
+                <summary>Опыт работы</summary>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam ratione eligendi excepturi?</p>
+            </details>
+        </section>
+        <!-- усовершенствование : новые атрибуты -->
+        <!-- autofocus -автофокус  -->
+        <!-- form -->
+        <!-- required - атрибут -обязательное поле ввода -->
+        <!-- submit - отправляет данные -->
+        <!-- pattern - регулярные выраженя -->
+        <section>
+            <h2>Оставить заявку на проект</h2>
+            <form action="#">
+                Ваше имя <input autofocus required type="text"><br>
+                <!-- Ваше имя <input title="Обязательное поле ввода" required type="text"><br> -->
+                Email <input type="email"><br>
+                Дата старта разработки проекта <input type="date"><br>
+                Сколько проектов вы хотите, чтобы я создал <input min="1" value="3" type="number"><br> <!--value="3" , min="1"  -не обязатально -->
+                Какие границы <input type="range"><br>
+                <button type="submit">Оставить заявку</button>
+                
+                <!-- пример из нета с паттернами -->
+                <p>Введите телефон в формате +7-xxx-xxx-xx-xx, где вместо x должна быть цифра:</p>
+                <p><input type="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"></p>
+                <p><input type="submit" value="Отправить"></p>
+
+            </form>
+        </section>
+        <!-- видео аудио -->
+        <section>
+            <h2>Музыкальный раздел сайта</h2>
+        <!--controls покажет плеер
+            autoplay - запустит автоматически. 
+            loop - перезапустит автоматически
+            muted - отключает звук
+            preload - какую часть загрузить браузеру для ускорения запукса
+                auto -заружает видеофайл полностью, ч.б. он был доступен,когда польз-ль начнет воспроизвед
+                metadate - браузер загруж.небольш.часть в-файла, чб определить его основн.хар-ки
+                none - отсутств.автом.загрузки видеофайла
+            poster выставляет изобр., к-е браузер будет использ.во время загрузки-->
+            <audio controls autoplay src="audio.mp3"></audio><br>
+
+            <!-- блочный эл. Значит можно в CSS задать параметры 
+            <video class="video" controls preload="auto" src="video.mp4"></video>-->
+        </section>
+        <section class="video-box">
+            <h2 class="video-heading">Крутое видео</h2>
+                <video class="video" controls preload="auto" src="video.mp4"></video>
+            <!-- видео для фона на сайт можно поискать - весят мало -->
+        </section>
+    </main>
+    <time>
+    <wbr>
+    
+
+    
+
+    <footer class="footer"></footer> 
+
+
+
+
+
+</body>
+</html>
