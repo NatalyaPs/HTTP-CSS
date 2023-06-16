@@ -362,12 +362,12 @@ a {
     }
 
     .title {
-        size: 38px;  /*38*/
+        font-size: 38px;  /*38*/
         line-height: 46px;   /*46*/
     }
 
     .subtitle {
-        size: 20px;  /*20*/
+        font-size: 20px;  /*20*/
         line-height: 24px;  /*24*/
     }
 
