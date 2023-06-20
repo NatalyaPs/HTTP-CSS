@@ -554,7 +554,7 @@ path {
 
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .center {
         padding-left: calc(50% - 376px);
         padding-right: calc(50% - 376px);
@@ -663,7 +663,7 @@ path {
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .center {
         padding-left: calc(50% - 154px);
         padding-right: calc(50% - 154px);
@@ -747,6 +747,12 @@ path {
         gap: 47px;
     }
 
+    .advantages__item {
+        max-width: 300px;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+
     .subscription_background {
         background-position: -450px;
     }
@@ -786,5 +792,13 @@ path {
         gap: 40px;
         justify-content: flex-start;
         padding-bottom: 9px;
+    }
+
+    .social-network__icons {
+        padding-right: 0;
+    }
+
+    .copyright__text {
+        padding-left: 0;
     }
 }
