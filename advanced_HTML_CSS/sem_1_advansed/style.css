@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*этот коммент будет виден в css - но мы туда не смотрим*/
+.nav__link {
+  font-family: sans-serif;
+  font-style: normal;
+  color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 1200px / 2);
+  padding-right: calc(50% - 1200px / 2);
+}
+
+.header {
+  padding-top: 20px;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+.nav__link {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  border: 1px solid black;
+  margin: 40px 0;
+}
+
+.title {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.color__text {
+  color: #8A2BE2;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 1200px;
+}
+.content__item {
+  height: 200px;
+  border: 1px solid #000;
+  width: 288px;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */
