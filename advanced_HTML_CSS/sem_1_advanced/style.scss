@@ -13,9 +13,6 @@
 //     gap: $gapNav;
 // }
 
-
-
-
 * {
     padding: 0;
     margin: 0;
@@ -38,6 +35,7 @@ a {
 .nav {
     display: flex;
     gap: $gapNav;
+
     &__link {
         text-decoration: none;
         @extend %fontSite;
@@ -55,20 +53,22 @@ a {
     padding-top: 20px;
     text-align: center;
 }
+
 .color__text {
     color: $colorDecorSite;
 }
 
 .content {
-    // @extend %flexContent;
-    @include flexMix();
+    @include flexCenter();  // можно без ()
     width: $widthSite;
+    gap: $gapNav;
     
     &__item {
         height: 200px;
         border: $borderContent;
-        width: ($widthSite - 3*$gapNav) / 4;
-        box-sizing: border-box;
+        // даже при flex-wrap: wrap; будет 4 блока без переноса. И даже при измен.ширины сайта и gap
+        width: ($widthSite - 3 * $gapNav) / 4;
+        box-sizing: border-box;  // чтоб не отнимать еще по 2px на каждую рамку элемента в формуле
     }
 }
 
@@ -102,7 +102,7 @@ a {
 // }
 
 
-// Оля
+// Оля - №4
 // .content {
 //     width: $widthSite;
 //     display: flex;

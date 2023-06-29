@@ -54,6 +54,7 @@ a {
   align-items: center;
   gap: 16px;
   width: 1200px;
+  gap: 16px;
 }
 .content__item {
   height: 200px;

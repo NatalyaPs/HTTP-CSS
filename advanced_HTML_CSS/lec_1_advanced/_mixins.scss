@@ -1,0 +1,14 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+// не нужно. т.к. дублирует
+@mixin flexMix {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

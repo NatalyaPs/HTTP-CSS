@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sem_1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- ДОКУМЕНТАЦИЯ С ПРИМЕРАМИ: https://sass-scss.ru/guide/ -->
+<body>
+    <!-- Задание #1. Устанавливаем 3 расширения
+        a. Live Sass Compiler
+        b. Sass
+        c. Live Server
+    2. Создаём новый файл index.html , style.scss
+    3. Запускаем компиляцию препроцессора
+    4. Добавляем произвольный код в style.scss проверяем как работает компиляция  -->
+    <div class="top">
+        <header class="header center">
+            <div class="header__left">
+                <a href="#">Главный логотип</a>
+                <a href="#">Поиск</a>
+            </div>
+            <div class="header__rigth">
+
+            </div>
+
+        <!--Задание №3. Переписать код css в препроцессорный. Добавить переменную gap и заменить ее у селектора .nav 
+        .nav {
+            display: flex;
+            gap: 16px;
+        }
+        .nav__link {
+            text-decoration: none;
+        } -->
+            <nav>
+                <div class="nav">
+                  <a href="#" class="nav__link">link-1</a>
+                  <a href="#" class="nav__link">link-2</a>
+                  <a href="#" class="nav__link">link-3</a>
+                  <a href="#" class="nav__link">link-4</a>
+                </div>
+              </nav>
+
+        </header>
+
+        <!-- Задание №2. В html добавить блок <div class="container"></div>
+        Создайте переменную ширины сайта и присвоить ей значение 1200px
+        Создайте переменную значения цвета текста сайта, которая будет равна #8A2BE2
+        Внутри блока container добавить заголовок “Знакомство с препроцессорами” слово препроцессорами необходимо выделить цветом из переменной пункт 3
+        Создайте комментарий в вашем коде scss, добавьте в него произвольный текст -->
+
+        <div class="container center">
+            <h1 class="title">Знакомство с <span class="color__text">препроцессорами</span></h1>
+        </div>
+
+        <!-- Задание №4. Дан код html
+            <div class="content">
+            <div class="content__item"></div>
+            <div class="content__item"></div>
+            <div class="content__item"></div>
+            <div class="content__item"></div>
+            </div>
+        1. Для блока content добавить стили display: flex;
+        2. Создать вложенность с использованием препроцессоров
+        3. Для блока content__item добавить значение ширины, равное ¼ от переменной ширины container
+        4. Для блока content добавить gap равный переменной из задания 3
+        5. Создать новую переменную, равную: 1px solid #000;
+        6. Добавить стили для content__item. используя переменную из пункта 6
+        height: 200px;
+        border: 1px solid #000; -->
+        <div class="content center">
+            <div class="content__item"></div>
+            <div class="content__item"></div>
+            <div class="content__item"></div>
+            <div class="content__item"></div>
+        </div>
+    </div>
+    <!-- Задание №5
+    1. Создать фрагмент vars
+    2. Добавить в него все созданные переменные
+    3. Подключить данный фрагмент к основному файлу style.scss. -->
+    
+
+    <!-- задание №6
+        1. Создать примесь (mixin)
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    1. Добавить данную примесь к блоку content
+    2. Создать наследование
+        font-family: sans-serif;
+        font-style: normal;
+    1. Добавить данное наследование для nav__link -->
+</body>
+</html>
