@@ -1,6 +1,4 @@
-@charset "UTF-8";
-/* 1      .title*/
-@keyframes focus-in-expand {
+/*# sourceMappingURL=style.css.map */@keyframes focus-in-expand {
   0% {
     letter-spacing: -0.5em;
     filter: blur(12px);
@@ -695,7 +693,7 @@ a {
   fill: #F16D7F;
 }
 
-.descript {
+.description {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -704,7 +702,7 @@ a {
   min-height: 680px;
   background-color: #fff;
 }
-.descript__box {
+.description__box {
   position: absolute;
   top: -50px;
   padding-top: 65px;
@@ -720,21 +718,21 @@ a {
   min-height: 600px;
   background-color: #fff;
 }
-.descript__title {
+.description__title {
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   color: #F16D7F;
 }
-.descript__devider {
+.description__devider {
   width: 63px;
   height: 3px;
   background: #F16D7F;
   margin-top: 12px;
   margin-bottom: 12px;
 }
-.descript__subtitle {
+.description__subtitle {
   color: #4D4D4D;
   font-size: 18px;
   font-style: normal;
@@ -742,7 +740,7 @@ a {
   line-height: normal;
   margin-bottom: 48px;
 }
-.descript__text {
+.description__text {
   width: 555px;
   color: #5E5E5E;
   text-align: center;
@@ -752,20 +750,20 @@ a {
   line-height: normal;
   margin-bottom: 32px;
 }
-.descript__price {
+.description__price {
   color: #F16D7F;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-.descript__line {
+.description__line {
   width: 641px;
   border-bottom: 2px solid #EAEAEA;
   margin-top: 65px;
   margin-bottom: 65px;
 }
-.descript__sort {
+.description__sort {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -774,7 +772,7 @@ a {
   gap: 23px;
   margin-bottom: 49px;
 }
-.descript__sort-item {
+.description__sort-item {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -782,10 +780,10 @@ a {
   align-items: center;
   gap: 9px;
 }
-.descript__sort-down-arrow:hover path {
+.description__sort-down-arrow:hover path {
   fill: #F16D7F;
 }
-.descript__product_add {
+.description__product_add {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -804,15 +802,15 @@ a {
   line-height: normal;
   transition: all 0.3s;
 }
-.descript__product_add path {
+.description__product_add path {
   fill: #F16D7F;
   transition: all 0.3s;
 }
-.descript__product_add:hover {
+.description__product_add:hover {
   color: white;
   background-color: #F16D7F;
 }
-.descript__product_add:hover path {
+.description__product_add:hover path {
   fill: white;
 }
 

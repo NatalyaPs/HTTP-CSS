@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+// сайт мозиллы MDN  немного изменила--------
+.content__summary {
+    display: block;
+}
+
+.content__summary::-webkit-details-marker {
+    display: none;
+}
+
+.content__summary::before {
+    content: '\2192';
+    padding-right: 0.5em;
+}
+
+.content[open] > .content__summary::before {
+    content: '\2193';
+}
+
+// .content__summary {
+//     display: block;
+// }
+
+// .content__summary::-webkit-details-marker {
+//     display: none;
+// }
+
+// .content__summary::before {
+//     content: '\2192';
+//     padding-right: 0.5em;  // 20px
+// }
+
+// .content[open] > .content__summary::before {
+//     content: '\2193';
+// }
+
+// ------------------- ^
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.content {
+    margin: 20px;
+    background-color: bisque;
+
+    &__summary {
+        color: rgb(158, 34, 34);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__text {
+        color: rgb(59, 48, 48);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
+
+.filter-sort {
+    height: 132px;
+    padding-top: 39px;
+    box-sizing: border-box;
+    position: relative;  // для .filter, ч.б. не двигал другие блоки  -- поменялось с 34 минуты в лекции
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    color: #6F6E6E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.sort {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+
+    &__details {
+        position: relative;  // sort-box
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__check {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+    }
+
+    &__check {
+        color: #6F6E6E;
+        font-size: 14px;
+        // font-family: Roboto;    подключить шрифт
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__heading {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background: #FFF;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+        padding: 7px 30px 11px 9px;
+        position: absolute;  // sort__details
+        left: -9px;
+        top: 22px;
+    }
+}
+
+
+// # 3
+// если появляется полоса прокрутки, то нужен глобальный блок и ему задать overflow: hidden. Тогда меню будет прятаться под следующим блоком. И внизу может понадобиться блок, над которым будет выезжать менюшка
+.header {
+    background-color: #234567;
+    height: 80px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.block {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    transition: left 1s;
+    width: 200px;
+    height: 300px;
+    background-color: #85aeb6;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#check {
+    display: none;
+}
+
+// управляющее меню
+// когда блок выбран, то рядом с ним ~ минус 100% слева
+#check:checked ~ .block {
+    left: -100%;
+}
+
+// пример вставки картинки от Алексея Кадочникова  ко 2му заданию
+// summary::before {
+//     content: '';
+//     display: block;
+//     width: 40px;
+//     height: 40px;
+//     background-image: url(https://www.corriere.ca/wp-content/uploads/images/download_icon.png);
+//     }
+
+// https://codepen.io/alexej-kadochnikow/pen/rNQyVMw?editors=1100

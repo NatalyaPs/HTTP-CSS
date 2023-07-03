@@ -1,0 +1,139 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.content__summary {
+  display: block;
+}
+
+.content__summary::-webkit-details-marker {
+  display: none;
+}
+
+.content__summary::before {
+  content: "→";
+  padding-right: 0.5em;
+}
+
+.content[open] > .content__summary::before {
+  content: "↓";
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.content {
+  margin: 20px;
+  background-color: bisque;
+}
+.content__summary {
+  color: rgb(158, 34, 34);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.content__text {
+  color: rgb(59, 48, 48);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.filter-sort {
+  height: 132px;
+  padding-top: 39px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sort {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+.sort__details {
+  position: relative;
+}
+.sort__summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sort__check {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.sort__check {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sort__heading {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sort__box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 11px 9px;
+  position: absolute;
+  left: -9px;
+  top: 22px;
+}
+
+.header {
+  background-color: #234567;
+  height: 80px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.block {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  transition: left 1s;
+  width: 200px;
+  height: 300px;
+  background-color: #85aeb6;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .block {
+  left: -100%;
+}/*# sourceMappingURL=style.css.map */

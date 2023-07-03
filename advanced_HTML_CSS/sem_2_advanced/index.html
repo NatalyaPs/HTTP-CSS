@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@600;700;800&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sem_2_a</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Задание 1 
+        Создать элемент details и добавить в него произвольный контент
+    Добавить элемент summary с произвольным текстом
+    Удалить стандартный треугольник у элемента details.
+    Добавить стили для элемента summary
+    Заменить стандартный треугольник на стрелку вправо \2192
+    При открытии блока details заменить на стрелку вниз (данный код нужно найти в интернете) -->
+
+    <p>Задание 1</p>
+    <!-- в поисковике "стилизация details" -->
+    <details class="content">
+        <summary class="content__summary">Важная информация</summary>
+        <div class="content__text">
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, commodi! Illo debitis soluta non repellat quod architecto aliquid officia consectetur eos fugit, culpa ducimus pariatur voluptate delectus alias? Cumque aperiam numquam officiis molestias beatae ullam culpa assumenda. Nam fugiat quidem similique. Enim nihil totam nisi eligendi similique iure possimus quia!</p>
+        </div>
+    </details>
+
+
+    <p>Задание 2</p>
+    <!--Задание 2 
+        Дана страница каталога https://www.figma.com/file/SbfOi2i4S1pIs0G6uOLPCx/shop-(Copy)?node-id=52%3A0&t=yqDGV1NUHY97IcQQ-0
+    Необходимо реализовать блок sort (данный блок находится в слоях figma)
+    Создать 3 элемента details (TRENDING NOW, SIZE, PRICE)
+    При клике на элемент SIZE появляется выпадающая сортировка. -->
+
+    <!-- пример из 2-й лекции -->
+    <div class="filter-sort center">
+        <div class="sort">
+            <details class="sort__details">
+                <summary class="sort__summary">
+                    <span class="sort__heading">TRENDING NOW</span> 
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81724 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214V5.00214Z" fill="#6F6E6E"/>
+                    </svg>
+                </summary>
+            </details>
+            <details class="sort__details">
+                <summary class="sort__summary">
+                    <span class="sort__heading">SIZE</span> 
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81724 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214V5.00214Z" fill="#6F6E6E"/>
+                    </svg>
+                </summary>
+                <div class="sort__box">
+                    <div class="sort__check">
+                        <input id="sort__check1" type="checkbox">
+                        <label for="sort__check1">XS</label>
+                    </div>
+                    <div class="sort__check">
+                        <input id="sort__check2" type="checkbox">
+                        <label for="sort__check2">S</label>
+                    </div>
+                    <div class="sort__check">
+                        <input id="sort__check3" type="checkbox">
+                        <label for="sort__check3">M</label>
+                    </div>
+                    <div class="sort__check">
+                        <input id="sort__check4" type="checkbox">
+                        <label for="sort__check4">L</label>
+                    </div>
+                </div>
+            </details>
+            <details class="sort__details">
+                <summary class="sort__summary">
+                    <!-- здесь можно сделать ползунок -->
+                    <span class="sort__heading">PRICE</span> 
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81724 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214V5.00214Z" fill="#6F6E6E"/>
+                    </svg>
+                </summary>
+            </details>
+        </div>
+    </div>
+
+
+    <p>задание 3</p>
+    <!-- Задание 3
+    На главной странице интернет магазина https://www.figma.com/file/SbfOi2i4S1pIs0G6uOLPCx/shop-(Copy)?node-id=24%3A0&t=yqDGV1NUHY97IcQQ-0 есть бургер меню
+    Без использования элемента details необходимо реализовать клик на изображение бургера меню
+    При клике должен появляться блок menu-burger, при повторном клике на данное изображение, данный блок должен пропадать
+    Выпадающий блок должен плавно появляться из правой части сайта. -->
+    <!-- можно сделать через details. Но для разнообразия делаем так -->
+
+
+    <div class="header">
+        <!-- можно добавить атрибут checked - будет выбран тогда -->
+        <input id="check" type="checkbox">
+            <!-- <nav class="nav">
+                <ul>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+            </nav> -->
+        <!-- привязываем check к burger-у лейблом -->
+        <label for="check"> 
+            <svg class="burger" width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8"/>
+            </svg>    
+        </label>
+        <div class="block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit reiciendis fuga ipsam perferendis architecto ex ab eos optio quasi cum.</div>
+        
+    </div>
+    
+
+    <!-- пример преподавателяк 2 задаче -->
+    <!-- html
+    <details class="details">
+        <summary>SIZE</summary>
+        <div class="block">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis blanditiis voluptatibus obcaecati molestiae adipisci impedit aperiam dolore, quaerat officia quasi recusandae excepturi earum dolorum dolor, beatae dicta eligendi tenetur.
+        </div>
+      </details>
+
+      css
+      summary {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      
+      summary::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-size: cover;
+        background-image: url(https://www.corriere.ca/wp-content/uploads/images/download_icon.png);
+      }
+      
+      .block {
+        box-shadow: 0 0 5px black;
+        padding: 10px;
+        width: 150px;
+        position: absolute;
+        top: 30px;
+        left: 0;
+      }
+      
+      .details {
+        position: relative;
+      } -->
+    
+</body>
+</html>
