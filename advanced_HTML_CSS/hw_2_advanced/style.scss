@@ -1189,14 +1189,52 @@ summary {
     }
 }
 
-.catalog__products__box {
-    background-color: #FFFFFF;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    grid-template-columns: repeat(3, 360px);
-    gap: 30px;
+.catalog__products {
+    &__box {
+        background-color: #FFFFFF;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, 360px);
+        gap: 30px;
+    }
+    &__pages {
+        background-color: #fff;
+        height: 188px;
+        padding-top: 49px;
+        padding-bottom: 96px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        &__link {
+            color: #6F6E6E;
+            font-size: 16px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        &__link:hover {
+            color: $colorSelectSite;
+        }
+    }
+    &__box-link {
+        width: 283px;
+        height: 43px;
+        padding: 11px 15px 12px;
+        border: 1px solid #EBEBEB;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
+
+.flipping-page:hover path {
+    fill: $colorSelectSite;
+}
+
 
 
 
