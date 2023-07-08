@@ -1037,7 +1037,7 @@ summary {
     display: block;
 }
 
-    summary::-webkit-details-marker {
+summary::-webkit-details-marker {
     display: none;
 }
 
@@ -1064,6 +1064,7 @@ summary {
     padding: 13px 16px 16px;
     position: absolute;
     z-index: 1;
+    transition: all 0.3s;
     &[open] .filter__heading {
         color: $colorSelectSite;
     }
@@ -1144,13 +1145,22 @@ summary {
     justify-content: flex-start;
     align-items: center;
     gap: 28px;
+    transition: all 0.3s;       //////////
     &__details {
         position: relative;
     }
+    &__details[open] .sort__heading {
+        color: $colorSelectSite;
+    }
+    &__details[open] path {
+        fill: $colorSelectSite;     ///////
+    }
+
     &__summary {
         display: flex;
         gap: 10px;
         align-items: center;
+
     }
     &__heading {
         color: #6F6E6E;
@@ -1158,6 +1168,16 @@ summary {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        &:hover {
+            color: $colorSelectSite;
+        }
+        // &:hover .sort__summary path{
+        //     fill: $colorSelectSite;
+        // }
+    }
+
+    &__svg:hover path{             //////////////
+        fill: $colorSelectSite;
     }
     &__box {
         position: absolute;
@@ -1187,6 +1207,10 @@ summary {
         font-weight: 400;
         line-height: normal;
     }
+}
+
+.sort__svg:hover path { //////////////////
+    fill: $colorSelectSite;
 }
 
 .catalog__products {

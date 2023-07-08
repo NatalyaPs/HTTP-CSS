@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lec_3_advanced</title>
+    <!-- здесь вставить скачанный шрифт из нашей папки -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- подключение сторонних шрифтов:
+    https://www.fontsquirrel.com/
+    на свой страх и риск!
+    поиск
+    скачать, разархивировать
+    генератор Webfont Generator
+        настройка optimal(!) или expert
+        расширение шрифта woff и woff2
+        custom subsetting (кастомизированная настройка) для русск.и англ.
+    перетягиваем нужные скачанные шрифты в генератор (можно не все)
+    download
+    перемещаем шрифты в нужную папку, выбираем файлы woff и stylesheet.css
+    подключаем в head в html link.css, указывая папку (мы переименовали и переместили в наш проект) fonts/stylesheet.css 
+    из файла stylesheet.css копируем шрифт font-family: ..  и вставляем в наш css-->
+    
+
+
+    <!-- тени -->
+<p class="box">
+    Lorem ipsum dolor sit amet.
+</p>
+<p class="box1">
+    Lorem ipsum dolor sit amet.
+</p>
+        <!-- используем "генератор обводки текста", н-р protocoder.ru: -->
+<p class="box2">
+    Lorem ipsum dolor sit amet.
+</p>
+        <!-- ищем "обводка текста": -->
+<p class="box3">
+    Lorem ipsum dolor sit amet.
+</p>
+
+<!-- css рамки -->
+<div class="box-flex">
+    <div class="rect r1">1</div>
+    <div class="rect r2">2</div>
+    <div class="rect r3">3</div>
+    <div class="rect r4">4</div>
+    <div class="rect r5">5</div>
+    <div class="rect r6">6</div>
+    <div class="rect r7">7</div>
+    <div class="rect r8">8</div>
+    <div class="rect r9">9</div>
+    <div class="rect r10">10</div>
+    <div class="rect r11">11</div>
+    <div class="rect r12">12</div>
+</div>
+
+<!-- создать треугольник css -->
+<div class="triangl1"></div>
+<div class="triangl2"></div>
+
+<!-- parallax -->
+<div class="content">
+    <header class="content-header"></header>
+    <h1>Lorem, ipsum dolor.</h1>
+</div>
+<div class="parallax"></div>
+<div class="content">
+    <header class="content-header"></header>
+    <h1>Lorem, ipsum dolor.</h1>
+</div>
+
+
+<div class="content1">
+    <nav class="menu">
+        <!-- ul>li*4a.linc{link-$} -->
+        <ul>
+            <li><a href="#main1" class="linc">link-1</a></li>
+            <li><a href="#main2" class="linc">link-2</a></li>
+            <li><a href="#main3" class="linc">link-3</a></li>
+            <li><a href="#main4" class="linc">link-4</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <article id="main1">
+            <h3>1 Lorem, ipsum dolor sit amet</in></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ad quas harum excepturi soluta cumque vel sunt molestias cupiditate! Atque doloremque ratione fugit accusamus nemo consequuntur enim, nulla corporis eos voluptates iure cumque nam, quidem delectus reprehenderit ex facilis nobis est ullam amet quod nesciunt. Pariatur incidunt, tenetur ipsa in quam at et doloremque quos sapiente dolore eaque voluptatum maxime dolor natus veniam eveniet soluta, iure est dolores provident praesentium illum totam. Modi iusto non possimus nisi repellat, maiores et. Repellendus a cumque maiores officia ab laboriosam, dolorum magni numquam reiciendis perspiciatis culpa aut iusto ut rerum tenetur. Porro, quos.</p>
+        </article>
+        <article id="main2">
+            <h3>2 Lorem, ipsum dolor sit amet</in></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ad quas harum excepturi soluta cumque vel sunt molestias cupiditate! Atque doloremque ratione fugit accusamus nemo consequuntur enim, nulla corporis eos voluptates iure cumque nam, quidem delectus reprehenderit ex facilis nobis est ullam amet quod nesciunt. Pariatur incidunt, tenetur ipsa in quam at et doloremque quos sapiente dolore eaque voluptatum maxime dolor natus veniam eveniet soluta, iure est dolores provident praesentium illum totam. Modi iusto non possimus nisi repellat, maiores et. Repellendus a cumque maiores officia ab laboriosam, dolorum magni numquam reiciendis perspiciatis culpa aut iusto ut rerum tenetur. Porro, quos.</p>
+        </article>
+        <article id="main3">
+            <h3>3 Lorem, ipsum dolor sit amet</in></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ad quas harum excepturi soluta cumque vel sunt molestias cupiditate! Atque doloremque ratione fugit accusamus nemo consequuntur enim, nulla corporis eos voluptates iure cumque nam, quidem delectus reprehenderit ex facilis nobis est ullam amet quod nesciunt. Pariatur incidunt, tenetur ipsa in quam at et doloremque quos sapiente dolore eaque voluptatum maxime dolor natus veniam eveniet soluta, iure est dolores provident praesentium illum totam. Modi iusto non possimus nisi repellat, maiores et. Repellendus a cumque maiores officia ab laboriosam, dolorum magni numquam reiciendis perspiciatis culpa aut iusto ut rerum tenetur. Porro, quos.</p>
+        </article>
+        <article id="main4">
+            <h3>4 Lorem, ipsum dolor sit amet</in></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ad quas harum excepturi soluta cumque vel sunt molestias cupiditate! Atque doloremque ratione fugit accusamus nemo consequuntur enim, nulla corporis eos voluptates iure cumque nam, quidem delectus reprehenderit ex facilis nobis est ullam amet quod nesciunt. Pariatur incidunt, tenetur ipsa in quam at et doloremque quos sapiente dolore eaque voluptatum maxime dolor natus veniam eveniet soluta, iure est dolores provident praesentium illum totam. Modi iusto non possimus nisi repellat, maiores et. Repellendus a cumque maiores officia ab laboriosam, dolorum magni numquam reiciendis perspiciatis culpa aut iusto ut rerum tenetur. Porro, quos.</p>
+        </article>
+    </div>
+</div>
+<div class="parallax"></div>
+<div class="content1">
+    <header class="content-header"></header>
+    <h1>Lorem, ipsum dolor.</h1>
+</div>
+
+
+<div class="item item1"></div>
+<div class="item item11"></div>
+<div class="item item2"></div>
+<div class="item item22"></div>
+<div class="item item3"></div>
+<div class="item item4">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est alias dicta nihil delectus natus? Aperiam pariatur aspernatur perferendis consequuntur optio. At libero, tempora fugit officia a nobis qui, laboriosam corrupti eius ipsa, ullam dolorem magnam. Harum quae temporibus, libero explicabo voluptatibus obcaecati odio dignissimos voluptatem veritatis vero id dolorem. Corporis eveniet rerum aperiam saepe dignissimos voluptatibus error asperiores, deleniti ea maxime aspernatur explicabo impedit, exercitationem excepturi ut distinctio, vel similique consequatur nesciunt sapiente libero iusto molestiae. Porro nihil natus delectus vel commodi. Accusamus sint hic magnam saepe eius, ipsam officia atque beatae ipsa ducimus non ipsum velit doloremque, nam autem tempora a eaque excepturi sed rem architecto! Tempora quisquam ipsum architecto sed totam. Impedit quia nihil molestias accusantium vitae placeat consequuntur rem velit qui esse quam, et optio cumque veniam eum assumenda voluptas doloremque vero sint officia atque. Accusamus delectus molestiae tenetur asperiores? Inventore enim voluptas quas nam ipsa error quia unde consequatur ab dolor repellat quaerat deleniti repellendus vel minima sed in natus, corporis vitae sint velit explicabo ea sapiente? Error nihil repellat facere. Magni tempora aut dolorum sit numquam voluptate at nisi architecto quos quo consequuntur fuga molestias nulla beatae iure iste inventore quod distinctio incidunt deserunt laboriosam minus eaque, odio nihil! Aut voluptatibus modi quas nisi, nobis explicabo accusamus, doloribus facilis praesentium quam sed laboriosam distinctio culpa cupiditate placeat error ad deserunt ratione? Doloremque, quis dolorum culpa, fugit id cum quisquam quasi facere dicta, aut placeat aliquam ipsum exercitationem velit. A illum ut unde autem sequi obcaecati necessitatibus tempora tenetur voluptas quia laboriosam numquam qui, corrupti sapiente, similique doloremque. Quasi molestias quisquam dignissimos. Ad sapiente, veritatis corporis voluptas dolores error hic labore minus assumenda aliquam nam non distinctio omnis laudantium molestiae possimus quis, culpa similique ipsam ratione? Repellendus explicabo dolorum placeat iste! Iure quaerat pariatur, quidem odit voluptatum repellat expedita ullam quisquam voluptatibus in vero nulla consequuntur nostrum voluptate omnis esse voluptates blanditiis impedit quo. Placeat culpa dicta, magnam, vitae iure ab voluptatem provident iusto voluptatum eum quibusdam, corporis explicabo quod distinctio inventore rerum ad! Numquam ea blanditiis ullam quis explicabo iste dignissimos quasi, qui adipisci atque tempore magnam sint doloremque? Tempore dolores corporis dolorem corrupti exercitationem modi at quod. Dignissimos numquam id ab dolore, nam, impedit, odit maiores laboriosam officiis quasi assumenda. Laboriosam culpa quam, quibusdam nemo quas iure deleniti corporis saepe veniam porro iusto, quia, recusandae nisi voluptatum ducimus illum eaque minima at magni et placeat rem quasi! Ut veritatis et deleniti amet eaque cumque, minima nobis molestiae repellat optio dicta. Ad id distinctio corporis, totam aspernatur eum placeat temporibus possimus exercitationem magnam numquam aliquam reiciendis neque. Error odio quo atque perferendis, reiciendis repudiandae vitae quae ex sapiente explicabo nulla, quidem laboriosam! Tempora possimus adipisci hic esse fuga vero cumque? Culpa, maxime impedit in officia minus laboriosam temporibus molestiae dolores ex delectus tenetur? Corrupti iusto, architecto repellendus quis labore reprehenderit qui excepturi rem, ratione commodi laborum maiores distinctio officiis! Itaque atque praesentium maiores vel! Dolores, nisi repudiandae? Repellendus excepturi est eius eaque dignissimos voluptatum? Et unde delectus vel dolorem obcaecati, omnis minima quo, non dolor, alias quam. Totam minima veritatis qui earum quas ex quo. Itaque, illum natus reprehenderit consectetur dignissimos suscipit voluptatibus odio sapiente, quidem alias animi recusandae veniam numquam dolorem architecto! Accusantium eum natus aspernatur earum error. Quidem, quaerat saepe eveniet enim debitis exercitationem ullam error dolorum? Unde accusamus voluptates accusantium at esse iusto ab alias animi, nemo laborum iste deleniti nihil fuga inventore quisquam ipsum ex amet tenetur dolor blanditiis vero illo doloremque voluptatibus. Cumque architecto voluptatibus aut porro est ea facilis eum, amet provident ratione commodi id sed! Necessitatibus tempora exercitationem error praesentium facilis impedit, voluptas ipsum unde? Rem quo, beatae excepturi quia odio eos atque velit dolor sequi! Aliquid minus dolores aperiam, explicabo ut deleniti corporis delectus architecto neque laboriosam inventore tempore nostrum aut quibusdam unde qui veniam doloremque quia mollitia autem. Molestias minus, eos inventore ad fugiat cumque accusamus eligendi, quas mollitia quis accusantium enim quasi ex exercitationem aut deserunt totam excepturi odio sit est. Explicabo ea dolore distinctio, corrupti neque quam debitis laboriosam nesciunt amet, id temporibus repudiandae quaerat? Recusandae dolor dolorem qui porro quae inventore sit placeat sint dignissimos, veritatis nemo provident aperiam! Repellat harum voluptatum voluptatem sed et est culpa obcaecati saepe a, tempore pariatur neque voluptate tempora facilis corporis sequi commodi officia dignissimos dolorem iusto iure ex nostrum optio velit. Voluptatibus saepe repudiandae aliquid sint doloribus. Commodi unde recusandae libero molestias. Officiis enim asperiores autem dicta ipsum inventore minus vero a laudantium eaque, ipsa nulla sapiente natus provident et deserunt, repudiandae, labore at beatae in? Obcaecati repudiandae esse pariatur ipsum distinctio necessitatibus dolores cum. Doloribus optio odit in, enim numquam quidem veniam error quisquam facere, maiores suscipit mollitia culpa a laborum minus dolores unde nemo quos iste exercitationem distinctio sit? A, unde similique. Ullam quae, nisi voluptatibus dolorem dicta, amet veritatis aspernatur nostrum ea rem dignissimos voluptatum ipsa ipsam ipsum itaque. Possimus alias dolorum nulla ullam assumenda fugiat nostrum, enim atque maxime laudantium rerum consectetur doloribus, odit tempora delectus! Eos impedit architecto, ipsa debitis alias nam pariatur recusandae ex in, nisi similique quasi eum nostrum, saepe facilis corrupti ad delectus cumque aut molestiae! Aut, delectus itaque aperiam beatae impedit iure, laudantium doloremque, facilis ipsam qui dignissimos deleniti iste veritatis consectetur asperiores ducimus distinctio at. Sit nam provident nesciunt omnis velit, dolorem quae animi exercitationem natus, harum non, eveniet inventore voluptatum facilis mollitia rem? Optio et animi inventore iste, veniam quos sequi dolorum dicta reiciendis hic ab nisi officiis dolore quidem at, possimus cumque. Quasi omnis maiores voluptates facere sunt autem doloribus adipisci delectus numquam perferendis repudiandae reprehenderit eum, nisi debitis alias laudantium. Esse culpa quae dicta exercitationem voluptas nihil distinctio sed obcaecati eum neque omnis possimus tempore officiis eius beatae commodi, error unde molestias excepturi animi vero? Ipsum possimus recusandae, quibusdam at vero doloremque quod facere nisi quasi doloribus. Fugiat, maxime culpa. Animi ut eligendi vel nostrum. Ipsa in exercitationem ad a, enim quod distinctio animi deleniti unde ipsam ratione earum corrupti nobis praesentium ex!
+</div>
+
+</body>
+</html>

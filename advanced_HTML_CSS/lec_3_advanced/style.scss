@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    // добавили плавность для parallax
+    // это сторонний API
+}
+
+.box {
+    width: 200px;
+    height: 20px;
+    // смещение по Х, смещение по У, размытие, цвет
+    text-shadow: 1px 1px 1px #000;
+    color: white;
+}
+
+.box1 {
+    width: 200px;
+    height: 20px;
+    // смещение по Х, смещение по У, размытие, цвет
+    text-shadow: 0px 0px 1px #000;
+    color: white;
+}
+
+.box2 {
+    /* created with http://protocoder.ru/css/strokeTextGen */
+	font-size: 16px;
+	color: #FFFFFF;
+	text-shadow: 
+        -0   -2px 1px #79B5B0,
+            0   -2px 1px #79B5B0,
+        -0    2px 1px #79B5B0,
+            0    2px 1px #79B5B0,
+        -2px -0   1px #79B5B0,
+            2px -0   1px #79B5B0,
+        -2px  0   1px #79B5B0,
+            2px  0   1px #79B5B0,
+        -1px -2px 1px #79B5B0,
+            1px -2px 1px #79B5B0,
+        -1px  2px 1px #79B5B0,
+            1px  2px 1px #79B5B0,
+        -2px -1px 1px #79B5B0,
+            2px -1px 1px #79B5B0,
+        -2px  1px 1px #79B5B0,
+            2px  1px 1px #79B5B0,
+        -2px -2px 1px #79B5B0,
+            2px -2px 1px #79B5B0,
+        -2px  2px 1px #79B5B0,
+            2px  2px 1px #79B5B0,
+        -2px -2px 1px #79B5B0,
+            2px -2px 1px #79B5B0,
+        -2px  2px 1px #79B5B0,
+            2px  2px 1px #79B5B0;
+}
+
+.box3 {
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+// рамки
+// или каждое св-во в отдельности: н-р  border-bottom-right-radius: ;
+.box-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.rect {
+    width: 250px;
+    height: 150px;
+    border: 1px solid #000;
+}
+
+.r1 {
+    border-radius: 0 0 20px 20px;
+}
+.r2 {
+    border-radius: 0 10px 20px;
+}
+.r3 {
+    border-radius: 10px 20px;
+}
+.r4 {
+    border-radius: 10px/30px;
+}
+.r5 {
+    border-radius: 5px 10px 15px 30px/30px 15px 10px 5px;
+}
+.r6 {
+    border-radius: 10px 20px 30px 40px/30px;
+}
+.r7 {
+    border-radius: 50%;
+}
+.r8 {
+    border-top: none;
+    border-bottom: none;
+    border-radius: 30px/90px;
+}
+.r9 {
+    border-bottom-left-radius: 100px;
+}
+.r10 {
+    border-radius: 0 100%;
+}
+.r11 {
+    border-radius: 0 50% 50% 50%;
+}
+.r12 {
+    border-top-left-radius: 100% 20px;
+    border-bottom-right-radius: 100% 20px;
+}
+
+//треугольник
+.triangl1 {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 100px;
+    border-left-width: 100px;
+    border-bottom: 100px solid rgb(104, 110, 204);
+}
+
+.triangl2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 200px 100px;
+    border-color: transparent transparent rgb(105, 216, 133) transparent;
+    
+}
+
+.content {
+    background-color: #ccc;
+    height: 500px;
+}
+
+.content-header {
+    height: 50px;
+    background-color: #555;
+    position: sticky;
+    top: 0;
+}
+
+.parallax {
+    min-height: 250px;
+    background-image: url(https://img.freepik.com/free-photo/blue-foaming-waves-in-north-beach-in-nazare-portugal_1268-15934.jpg?w=1380&t=st=1688650882~exp=1688651482~hmac=a543f1ea2340cce004b2d66c101c1f5a50fc197498b7e09954699a6bd5628dcf);
+    // свойство  background-attachment: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+// плюс для плавности см вверху - св-во для html
+.main {
+    margin-left: 25%;
+}
+
+.content1 {
+    background-color: #6dbbf0;
+    min-height: 500px;
+}
+
+.menu {
+    width: 20%;
+    position: sticky;
+    top: 20%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+//
+.item {
+    height: 200px;
+    background: #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.item1 {
+    clip-path: circle(50px at 0 100px);
+}
+
+.item11 {
+    clip-path: circle(150px at 70px 200px);
+    background-image: url(https://img.freepik.com/free-photo/blue-foaming-waves-in-north-beach-in-nazare-portugal_1268-15934.jpg?w=1380&t=st=1688650882~exp=1688651482~hmac=a543f1ea2340cce004b2d66c101c1f5a50fc197498b7e09954699a6bd5628dcf);
+    background-size: cover;
+    height: 400px;
+}
+
+.item2 {
+    clip-path: ellipse(130px 140px at 10% 20%);
+}
+
+.item22 {
+    clip-path: ellipse(130px 140px at 20% 30%);
+}
+
+//polygon - 4 точки по Х и У
+.item3 {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.item4 {
+    clip-path: polygon(50% 10%, 12% 100%, 30% 40%, 0% 25%);
+    background-image: url(https://img.freepik.com/free-photo/blue-foaming-waves-in-north-beach-in-nazare-portugal_1268-15934.jpg?w=1380&t=st=1688650882~exp=1688651482~hmac=a543f1ea2340cce004b2d66c101c1f5a50fc197498b7e09954699a6bd5628dcf);
+    background-size: cover;
+}

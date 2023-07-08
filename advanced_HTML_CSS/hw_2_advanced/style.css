@@ -943,6 +943,7 @@ summary::-webkit-details-marker {
   padding: 13px 16px 16px;
   position: absolute;
   z-index: 1;
+  transition: all 0.3s;
 }
 .filter[open] .filter__heading {
   color: #F16D7F;
@@ -1022,9 +1023,16 @@ summary::-webkit-details-marker {
   justify-content: flex-start;
   align-items: center;
   gap: 28px;
+  transition: all 0.3s;
 }
 .sort__details {
   position: relative;
+}
+.sort__details[open] .sort__heading {
+  color: #F16D7F;
+}
+.sort__details[open] path {
+  fill: #F16D7F;
 }
 .sort__summary {
   display: flex;
@@ -1037,6 +1045,12 @@ summary::-webkit-details-marker {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.sort__heading:hover {
+  color: #F16D7F;
+}
+.sort__svg:hover path {
+  fill: #F16D7F;
 }
 .sort__box {
   position: absolute;
@@ -1065,6 +1079,10 @@ summary::-webkit-details-marker {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.sort__svg:hover path {
+  fill: #F16D7F;
 }
 
 .catalog__products__box {
