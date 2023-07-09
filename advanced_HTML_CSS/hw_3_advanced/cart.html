@@ -21,68 +21,53 @@
                 <a href="#"><img src="img/logo_search.svg" width="26" alt="search"></a>
             </nav>
             <nav class="heading_rigth">
+                <!-- в лекции №2  алексей удалил обертку burger-menu-icon -->
                 <div class="burger-menu-icon">
+                    <input id="burger" type="checkbox" checked hidden>
                     <label for="burger">
-                        <a href="#" class="activ-mobile-menu">
-                            <img src="img/logo_nav.svg" width="32" alt="burger-menu">
-                        </a>
+                        <img src="img/logo_nav.svg" width="32" alt="burger-menu">
                     </label>
-                    <input class="burger" type="checkbox">
+                    <nav class="nav-burger">
+                        <h3 class="nav-burger__tytle">MENU</h3>
+                        <div class="nav-burger__box">
+                            <ul>
+                                <li class="nav-burger__subject"><a href="catalog.html"></a>MAN
+                                    <ul>
+                                        <li class="nav-burger__link"><a href="#"></a>Accessories</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Bags</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Denim</li>
+                                        <li class="nav-burger__link"><a href="#"></a>T-Shitrs</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-burger__subject"><a href="catalog.html"></a>WOMEN
+                                    <ul>
+                                        <li class="nav-burger__link"><a href="#"></a>Accessories</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Jackets & Coats</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Polos</li>
+                                        <li class="nav-burger__link"><a href="#"></a>T-Shirts</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Shirts</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-burger__subject"><a href="catalog.html"></a>KIDS
+                                    <ul>
+                                        <li class="nav-burger__link"><a href="#"></a>Accessories</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Jackets & Coats</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Polos</li>
+                                        <li class="nav-burger__link"><a href="#"></a>T-Shirts</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Shirts</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Bags</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </nav>
                     
                 </div>
-                
-
-
-
-
-
-
-
-                <!-- переделали на лекции №2. Можно использовать тег details - как в выпадающих меню размеров, но здесь для примера второй вариант -->
-                <!-- <div class="heading_mobile-menu">
-                    <a class="activ-mobile-menu" href="#"><img src="img/logo_nav.svg" width="32" alt="menu">
-                        <div class="mobile-menu">
-                            <h3 class="mobile-menu__tytle">MENU</h3>
-                            <div class="mobile-menu__box">
-                                <div class="mobile-menu__subtitle">
-                                    <a class="mobile-menu__subject" href="#" >MAN
-                                        <ul class="mobile-menu__list">
-                                            <li><a href="#" class="mobile-menu__link">Accessories</a></li>
-                                            <li><a href="#" class="mobile-menu__link">Bags</a></li>
-                                            <li><a href="#" class="mobile-menu__link">Denim</a></li>
-                                            <li><a href="#" class="mobile-menu__link">T-Shitrs</a></li>   
-                                        </ul>
-                                    </a>
-                                </div>
-                                <div class="mobile-menu__subtitle">
-                                    <a href="#" class="mobile-menu__subject">WOMEN</a>
-                                    <ul class="mobile-menu__list">
-                                        <li><a href="#" class="mobile-menu__link">Accessories</a></li>
-                                        <li><a href="#" class="mobile-menu__link">Jackets & Coats</a></li>
-                                        <li><a href="#" class="mobile-menu__link">Polos</a></li>
-                                        <li><a href="#" class="mobile-menu__link">T-Shitrs</a></li>   
-                                        <li><a href="#" class="mobile-menu__link">Shitrs</a></li>   
-                                    </ul>
-                                </div>
-                                <div class="mobile-menu__subtitle">
-                                    <a href="#" class="mobile-menu__subject">KIDS</a>
-                                    <ul class="mobile-menu__list">
-                                        <li><a href="#" class="mobile-menu__link">Accessories</a></li>
-                                        <li><a href="#" class="mobile-menu__link">Jackets & Coats</a></li>
-                                        <li><a href="#" class="mobile-menu__link">Polos</a></li>
-                                        <li><a href="#" class="mobile-menu__link">T-Shitrs</a></li>   
-                                        <li><a href="#" class="mobile-menu__link">Shitrs</a></li>   
-                                        <li><a href="#" class="mobile-menu__link">Bags</a></li>   
-                                    </ul>
-                                </div>
-                            </div>  
-                        </div>
-                    </a>
-                </div> -->
-                
                 <a class="no-mobile" href="#"><img src="img/logo_account.svg" width="29" height="29"></a>
-                <a class="no-mobile" href="#"><img src="img/logo_basket.svg" width="32" height="29"></a>
+                <a class="no-mobile" href="cart.html"><img src="img/logo_basket.svg" width="32" height="29"></a>
             </nav>
+            
         </header>
         <section class="top-cart center">
             <div class="top-cart__title">SHOPPING CART</div>
