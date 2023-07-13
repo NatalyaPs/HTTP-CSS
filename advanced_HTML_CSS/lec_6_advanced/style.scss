@@ -1,0 +1,96 @@
+$widthDark: 75px;
+$countDuck: 4;
+
+
+@for $i from 1 through $countDuck {
+    @keyframes duck-fly-#{$i} {
+        0% {
+            left: -$widthDark;
+            top: random(80)+vh;
+        }
+        25% {
+            left: random(25)+vw;
+            top: random(80)+vh;
+        }
+        50% {
+            left: random(50)+vw;
+            top: random(80)+vh;
+        }
+        75% {
+            left: random(75)+vw;
+            top: random(80)+vh;
+        }
+        100% {
+            left: 100vw;
+            top: random(80)+vh;
+        }
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    counter-reset: count;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://i.ytimg.com/vi/i9R8MqilMW8/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;  // .counter-info
+}
+
+// html {
+//     counter-reset: count;  //  название счетчика
+// }
+
+.duck-check {
+    // display: none; // не рекоменд, тк может работать по-разному
+    position: absolute;
+    visibility: hidden;
+    left: -999999px;
+    // когда duck-check:checked, count увеличивается
+    &:checked {
+        counter-increment: count;
+    }
+    &:checked ~ label{
+        display: none;
+    }
+}
+
+.counter-info {
+    position: absolute;  //.body
+    top: 24px;
+    right: 24px;
+    //  content - овзможность добавить значение. counter- функция. Т.е.выводим значение счетчика, т.е.галочкм чекбокса ривязаны к заголовку h1
+    width: 45px;
+    height: 45px;
+    background-color: #FFF;
+    color: darkmagenta;
+    border: 1px solid darkmagenta;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+        content: counter(count);
+    }
+}
+
+
+.duck {
+    position: absolute;
+    &__img {
+        width: $widthDark;
+    }
+    @for $i from 1 through $countDuck {
+        &_#{$i} {
+            animation: duck-fly-#{$i} 5s ease-in #{$i}s both;
+        }
+    }
+
+}

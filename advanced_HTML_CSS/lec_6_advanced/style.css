@@ -1,0 +1,152 @@
+@keyframes duck-fly-1 {
+  0% {
+    left: -75px;
+    top: 74vh;
+  }
+  25% {
+    left: 18vw;
+    top: 67vh;
+  }
+  50% {
+    left: 22vw;
+    top: 58vh;
+  }
+  75% {
+    left: 66vw;
+    top: 1vh;
+  }
+  100% {
+    left: 100vw;
+    top: 53vh;
+  }
+}
+@keyframes duck-fly-2 {
+  0% {
+    left: -75px;
+    top: 7vh;
+  }
+  25% {
+    left: 25vw;
+    top: 2vh;
+  }
+  50% {
+    left: 25vw;
+    top: 31vh;
+  }
+  75% {
+    left: 41vw;
+    top: 35vh;
+  }
+  100% {
+    left: 100vw;
+    top: 26vh;
+  }
+}
+@keyframes duck-fly-3 {
+  0% {
+    left: -75px;
+    top: 62vh;
+  }
+  25% {
+    left: 23vw;
+    top: 41vh;
+  }
+  50% {
+    left: 49vw;
+    top: 11vh;
+  }
+  75% {
+    left: 73vw;
+    top: 15vh;
+  }
+  100% {
+    left: 100vw;
+    top: 55vh;
+  }
+}
+@keyframes duck-fly-4 {
+  0% {
+    left: -75px;
+    top: 1vh;
+  }
+  25% {
+    left: 20vw;
+    top: 59vh;
+  }
+  50% {
+    left: 35vw;
+    top: 19vh;
+  }
+  75% {
+    left: 31vw;
+    top: 51vh;
+  }
+  100% {
+    left: 100vw;
+    top: 24vh;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  counter-reset: count;
+  height: 100vh;
+  margin: 0;
+  background-image: url(https://i.ytimg.com/vi/i9R8MqilMW8/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.duck-check {
+  position: absolute;
+  visibility: hidden;
+  left: -999999px;
+}
+.duck-check:checked {
+  counter-increment: count;
+}
+.duck-check:checked ~ label {
+  display: none;
+}
+
+.counter-info {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 45px;
+  height: 45px;
+  background-color: #FFF;
+  color: darkmagenta;
+  border: 1px solid darkmagenta;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter-info::before {
+  content: counter(count);
+}
+
+.duck {
+  position: absolute;
+}
+.duck__img {
+  width: 75px;
+}
+.duck_1 {
+  animation: duck-fly-1 5s ease-in 1s both;
+}
+.duck_2 {
+  animation: duck-fly-2 5s ease-in 2s both;
+}
+.duck_3 {
+  animation: duck-fly-3 5s ease-in 3s both;
+}
+.duck_4 {
+  animation: duck-fly-4 5s ease-in 4s both;
+}/*# sourceMappingURL=style.css.map */

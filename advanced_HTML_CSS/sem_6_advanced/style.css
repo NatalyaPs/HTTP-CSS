@@ -1,0 +1,99 @@
+@keyframes lamps-1 {
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lamps-2 {
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lamps-3 {
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  counter-reset: count;
+}
+
+.body {
+  min-height: 100vh;
+  background-image: url(img/earth.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.lamp-check {
+  position: absolute;
+  visibility: hidden;
+  left: -999999px;
+  transition: all 3s;
+}
+.lamp-check:checked {
+  counter-increment: count;
+}
+.lamp-check:checked ~ label {
+  display: none;
+}
+
+.lamp {
+  position: absolute;
+  opacity: 0;
+}
+.lamp__img {
+  width: 50px;
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
+.lamp_1 {
+  left: 42vw;
+  top: 39vh;
+  animation: lamps-1 3s ease-in 1s;
+}
+.lamp_2 {
+  left: 2vw;
+  top: 35vh;
+  animation: lamps-2 3s ease-in 2s;
+}
+.lamp_3 {
+  left: 7vw;
+  top: 44vh;
+  animation: lamps-3 3s ease-in 3s;
+}
+
+.counter-info {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 45px;
+  height: 45px;
+  background-color: #FFF;
+  color: darkmagenta;
+  border: 1px solid darkmagenta;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter-info::before {
+  content: counter(count);
+}/*# sourceMappingURL=style.css.map */
