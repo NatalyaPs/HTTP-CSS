@@ -65,18 +65,18 @@ html {
   filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
 }
 .lamp_1 {
-  left: 16vw;
-  top: 35vh;
+  left: 9vw;
+  top: 54vh;
   animation: lamps-1 3s ease-in 1s;
 }
 .lamp_2 {
-  left: 54vw;
-  top: 32vh;
+  left: 62vw;
+  top: 40vh;
   animation: lamps-2 3s ease-in 2s;
 }
 .lamp_3 {
-  left: 58vw;
-  top: 33vh;
+  left: 76vw;
+  top: 44vh;
   animation: lamps-3 3s ease-in 3s;
 }
 
